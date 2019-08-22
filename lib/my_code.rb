@@ -14,9 +14,6 @@ def reduce(array, starting = nil)
   index = 0
   while index < array.length do
   total = yield(total, array[index])
-  if !array[index]
-    return false 
-  end
   index += 1 
 end
 total
